@@ -10,7 +10,8 @@
                                     <img src="img/2.png" alt="Logo" height="70%" width="80%">
                                 </div>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.</p>
+                            <p>Our mission is “vocal for local Indian products” and promote micro, small and medium enterprises of India.
+</p>
                             <div class="footer-address">
                                 <ul>
                                     <li>
@@ -57,7 +58,7 @@
                                     <li><a href="about.html">About</a></li>
                                     <li><a href="blog.html">home</a></li>
                                     <li><a href="shop.html">All Products</a></li>
-    
+                                    <li><a href="login.html">Login</a></li>
                                     <li><a href="contact.html">Contact us</a></li>
                                 </ul>
                             </div>
@@ -70,7 +71,7 @@
                                 <ul>
                                     <li><a href="order-tracking.html">Order tracking</a></li>
                                     <li><a href="wishlist.html">Wish List</a></li>
-                                    <li><a href="login.html">Login</a></li>
+                                    
                                     <li><a href="account.html">My account</a></li>
                                     <li><a href="about.html">Terms & Conditions</a></li>
                                     <li><a href="about.html">Promotional Offers</a></li>
