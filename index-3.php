@@ -80,7 +80,7 @@
                 <div class="col-lg-12">
                     <div class="section-title-area ltn__section-title-2--- text-center">
                         <!-- <h6 class="section-subtitle ltn__secondary-color">// Cars</h6> -->
-                        <h1 class="section-title">Products</h1>
+                        <h1 class="section-title">Products yash</h1>
                         <p>A highly efficient slip-ring scanner for today's diagnostic requirements.</p>
                     </div>
                     <div class="ltn__tab-menu ltn__tab-menu-2 ltn__tab-menu-top-right-- text-uppercase text-center">
