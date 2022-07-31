@@ -81,9 +81,12 @@
                     </div>
                     <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                         <div class="footer-widget footer-newsletter-widget">
-                            <h4 class="footer-title ltn__secondary-color">Newsletter</h4>
-                            <p>Sign up today for free and be the first to get notified on our new updates, discounts and special Offers.
-
+                            <h4 class="footer-title ltn__secondary-color">adress</h4>
+                            <p>Prayosha UG
+Bei Patel
+Seilgraben 1
+52062 Aachen
+Germany
 </p>
                             <div class="footer-newsletter">
                                 <form action="#">
