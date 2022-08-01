@@ -14,28 +14,13 @@
 </p>
                             <div class="footer-address">
                                 <ul>
-                                    <li>
-                                        <div class="footer-address-icon">
-                                            <i class="icon-placeholder"></i>
-                                        </div>
-                                        <div class="footer-address-info">
-                                            <p>Brooklyn, New York, United States</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="footer-address-icon">
-                                            <i class="icon-call"></i>
-                                        </div>
-                                        <div class="footer-address-info">
-                                            <p><a href="tel:+0123-456789">+0123-456789</a></p>
-                                        </div>
-                                    </li>
+                                   
                                     <li>
                                         <div class="footer-address-icon">
                                             <i class="icon-mail"></i>
                                         </div>
                                         <div class="footer-address-info">
-                                            <p><a href="mailto:example@example.com">example@example.com</a></p>
+                                            <p><a href="mailto:imartgroceries@gmail.com">imartgroceries@gmail.com</a></p>
                                         </div>
                                     </li>
                                 </ul>
@@ -84,18 +69,10 @@
                             <h4 class="footer-title ltn__secondary-color">adress</h4>
                             <p>Prayosha UG
 Bei Patel
-Seilgraben 1
-52062 Aachen
+Seilgraben 1<br>52062 Aachen
 Germany
 </p>
-                            <div class="footer-newsletter">
-                                <form action="#">
-                                    <input type="email" name="email" placeholder="Email*">
-                                    <div class="btn-wrapper">
-                                        <button class="theme-btn-1 btn" type="submit"><i class="fas fa-location-arrow"></i></button>
-                                    </div>
-                                </form>
-                            </div>
+                        
                             <h5 class="mt-30">We Accept</h5>
                             <img src="img/icons/payment-4.png" alt="Payment Image">
                         </div>
