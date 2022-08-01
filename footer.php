@@ -66,7 +66,7 @@
                     </div>
                     <div class="col-xl-4 col-md-6 col-sm-12 col-12">
                         <div class="footer-widget footer-newsletter-widget">
-                            <h4 class="footer-title ltn__secondary-color">adress</h4>
+                            <h4 class="footer-title ltn__secondary-color">address</h4>
                             <p>Prayosha UG
 Bei Patel
 Seilgraben 1<br>52062 Aachen
