@@ -59,6 +59,10 @@
        <input class="form-control ms-2" type="file" name="slid_img" id="Image">
 </div>
 <div class="input-group input-group-outline my-3">
+       <lable class="lable-control mt-2"> Image:</lable>
+       <input class="form-control ms-2" type="file" name="img_2" id="Image">
+</div>
+<div class="input-group input-group-outline my-3">
        <lable class="lable-control mt-2"> name:</lable><input class="form-control ms-2" type="text" name="slid_title">
 </div>
       </div>
@@ -79,16 +83,18 @@
 
   
     <?php
-  $conn=mysqli_connect("localhost","root","","admin");
+  $conn=mysqli_connect("localhost","root","","web");
   if(isset($_POST['slideradd'])){
     $slid_title=$_POST['slid_title'];
     $slid_img=$_FILES["slid_img"]['name'];
+    $img_2=$_FILES["img_2"]['name'];
     if(!$conn){
         echo "data not connected";
     }else{
-    $sql3="INSERT INTO `slider_tbl`(`slid_img`, `slid_title`) VALUES ('$slid_img','$slid_title')";
+    $sql3="INSERT INTO `slider_tbl`(`slid_img`,`slid_title`,`img_2`) VALUES ('$slid_img','$slid_title','$img_2')";
         if(mysqli_query($conn,$sql3)){
             move_uploaded_file($_FILES["slid_img"]["tmp_name"],"uploads/".$_FILES['slid_img']['name']);
+            move_uploaded_file($_FILES["img_2"]["tmp_name"],"uploads/".$_FILES['img_2']['name']);
             
         }
         else{
@@ -123,8 +129,9 @@
             <table class="table align-items-center mb-0">
               <thead>
                 <tr>
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">image</th>
-                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">name</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">no</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">image1</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">image2</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
                   <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">delete</th>
                   <th class="text-secondary opacity-7"></th>
@@ -137,16 +144,26 @@
                   while($row=mysqli_fetch_assoc($arrey)){
                    ?>     
                     <tr>
+                      <td>
+                    <div class="d-flex flex-column justify-content-center">
+                        <h6 class=" text-sm"><?php echo  $row['id'];  ?></h6>
+                 
+                      </div>
+                      </td>
                   <td>
                     <div class="d-flex px-2 py-1">
                       <div>
                       <?php echo '<img src="uploads/'.$row['slid_img'].'" width="100px;" height="100px;"  class="avatar avatar-sm me-3 border-radius-lg" alt="user1">'?>
                       </div>
-                      <div class="d-flex flex-column justify-content-center">
-                        <h6 class=" text-sm"><?php echo  $row['id'];  ?></h6>
-                        
                       </div>
-                    </div>
+                  </td>
+                  <td>
+                  <div class="d-flex px-2 py-1">
+                      <div>
+                      <?php echo '<img src="uploads/'.$row['img_2'].'" width="100px;" height="100px;"  class="avatar avatar-sm me-3 border-radius-lg" alt="user1">'?>
+                      </div>
+                      </div>
+                    
                   </td>
                   <td>
                     <p class="text-xs font-weight-bold mb-0"><?php echo  $row['slid_title'];  ?></p>
@@ -184,7 +201,10 @@
                  
                 </tr>
                 <tr>
-                  <td>
+                <td>
+                    <button  class="btn btn-danger"><a href="slider-inp.php?id=<?php echo $row['id']; ?>" class="text-white">delete</button>
+                  </td>
+                  </tr>
                   <?php  }
                 }
                 else{

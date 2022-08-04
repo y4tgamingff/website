@@ -79,8 +79,6 @@
   </div>
 </div>
     <!-- end model -->
-    
- 
 <!-- produs add -->
 <?php
   $conn=mysqli_connect("localhost","root","","web");
@@ -146,6 +144,7 @@
                   <td class="align-middle">
                     <button  class="btn btn-danger"><a href="delete.php?no=<?php echo $row['no']; ?>" class="text-white">delete</button>
                   </td>
+                  
                 </tr>
                 <tr>
                   <td>
@@ -171,8 +170,7 @@
                   </td>
                  
                 </tr>
-                <tr>
-                  <td>
+                
                   <?php  }
                 }
                 else{

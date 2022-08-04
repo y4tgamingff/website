@@ -8,14 +8,21 @@
 
 
 <body>
-   
+
 <!-- Body main wrapper start -->
 <div class="body-wrapper">
 
-<?php include 'header.php'; ?>
+<?php include 'header.php';?>
 
 <!-- <-- <slider start -->
-   
+    <?php
+require 'includs/conn.php';
+ 
+$sql="SELECT * FROM slider_tbl";
+$arrey=mysqli_query($conn,$sql);
+if(mysqli_num_rows($arrey)>0){
+    while($row=mysqli_fetch_assoc($arrey)){
+?>
    <!-- SLIDER AREA START (slider-3) -->
    <div class="ltn__slider-area ltn__slider-3  section-bg-1">
         <div class="ltn__slide-one-active slick-slide-arrow-1 slick-slide-dots-1">
@@ -27,7 +34,7 @@
                             <div class="col-lg-12 align-self-center">
                                
                             
-                                    <img src="img/slider/23.png" alt="#">
+                            <?php echo '<img src="includs/uploads/'.$row['slid_img'].'"  height="500px" width="100%" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">'?>
                 
                             </div>
                         </div>
@@ -42,7 +49,7 @@
                             <div class="col-lg-12 align-self-center">
                                
                                 
-                                    <img src="img/slider/14.jpg" alt="#">
+                            <?php echo '<img src="includs/uploads/'.$row['img_2'].'"  height="500px" width="100%" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">'?>
                                 
                             </div>
                         </div>
@@ -52,7 +59,12 @@
             <!--  -->
         </div>
     </div>
- 
+    <?php  }
+                }
+                else{
+                  echo "no record";
+                }
+                ?>
     <!-- SLIDER AREA END -->
 
   
